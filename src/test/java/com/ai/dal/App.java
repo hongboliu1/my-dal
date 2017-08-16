@@ -9,7 +9,7 @@ package com.ai.dal;
  * Description		: 这里记述class说明<br>
  * 
  * @author liuhb
- * @version 
+ * @version
  * @see
  *
  */
