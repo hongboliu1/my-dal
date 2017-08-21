@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>my-dal</artifactId>
-	<groupId>com.ai</groupId>
+	<groupId>com.bohai</groupId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
@@ -27,8 +27,7 @@
 		<!-- 依赖版本 -->
 		<!-- spring -->
 		<org.springframework.version>4.3.3.RELEASE</org.springframework.version>
-		<com.springsource.org.aspectj.weaver.version>1.7.2.RELEASE</com.springsource.org.aspectj.weaver.version>
-		
+
 		<!-- mybatis -->
 		<org.mybatis.version>3.2.7</org.mybatis.version>
 		<mybatis-spring.version>1.2.2</mybatis-spring.version>
@@ -129,8 +128,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
-			<artifactId>com.springsource.org.aspectj.weaver</artifactId>
-			<version>${com.springsource.org.aspectj.weaver.version}</version>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectjweaver.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.freemarker</groupId>
@@ -175,33 +174,11 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>${hibernate-validator.version}</version>
 		</dependency>
-		<!--
-		<dependency>
-			<groupId>opensymphony</groupId>
-			<artifactId>sitemesh</artifactId>
-			<version>${sitemesh.version}</version>
-		</dependency>
-		-->
-
-		<dependency>
-			<groupId>cglib</groupId>
-			<artifactId>cglib</artifactId>
-			<version>3.2.4</version>
-		</dependency>
-
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.version}</version>
 		</dependency>
-		<!--
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-			<version>${jedis.version}</version>
-		</dependency>
-		-->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
@@ -293,22 +270,20 @@
 			<artifactId>druid</artifactId>
 			<version>${druid.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
 			<version>${commons-beanutils.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.eweb4j</groupId>
-			<artifactId>fel</artifactId>
-			<version>0.8</version>
-		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.22</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bohai</groupId>
+			<artifactId>mybatis-dal</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
